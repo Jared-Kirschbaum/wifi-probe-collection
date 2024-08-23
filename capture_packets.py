@@ -20,7 +20,7 @@ def has_probe_request(packet) -> bool:
 
 def is_random_mac(mac_address: str) -> int:
     """Determine if the MAC address is randomized."""
-    return 1 if mac_address[1] in {"2", "6", "A", "E"} else 0
+    return 1 if mac_address[1].upper() in {"2", "6", "A", "E"} else 0
 
 def create_payload(mac_address: str, ssid: str) -> str:
     """Create a JSON payload from the MAC address and SSID."""
