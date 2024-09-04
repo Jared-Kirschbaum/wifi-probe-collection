@@ -72,7 +72,7 @@ def register_device(device_id: str) -> None:
 
     try:
 
-        device_id = f"BOWSER-{uuid.uuid4()}"
+        device_id = f"DEVICE-{uuid.uuid4()}"
 
         registry_manager.create_device_with_sas(
         device_id=generate_device_id,
