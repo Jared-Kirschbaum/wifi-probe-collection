@@ -48,7 +48,7 @@ def generate_base64_key() -> str:
 def generate_device_id() -> str:
 
     try:
-        return f"BOWSER-{uuid.uuid4()}"
+        return f"DEVICE-{uuid.uuid4()}"
 
     except Exception as e:
         print(f"Failed to Generate Device ID: {e}")
